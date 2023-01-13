@@ -1,0 +1,21 @@
+footer{
+    margin-top: 25px;
+    background-color: lightgrey;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area: "visa" "wapp" "instagram";
+    max-width: 100%;
+    padding-top: 5px;
+    justify-content: space-between;
+    color: $colorletra;
+}
+footer h2:nth-child(1){
+    grid-area: visa;
+}
+footer h2:nth-child(2){
+    grid-area: wapp;
+}
+footer h2:nth-child(3){
+    grid-area:instagram;
+}

@@ -1,0 +1,16 @@
+/*contacto*/
+.formcontacto{
+    padding:10px;
+    width:500px;
+    height: 320px;
+    text-align:center;
+    border-radius:5px;
+    border: $colorPrincipal solid 3px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: "nombre celu"
+                          "email email"
+                          "asunto asunto"
+                          "boton   boton";
+}

@@ -1,0 +1,20 @@
+.sectionr{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 10px;
+    > .list-group-item{
+        border: grey solid 3px;
+        &:hover, &:focus{
+        color:crimson;
+    }
+    }
+    > video{
+        width: 500px;
+        height: 300px;
+    }
+}
+
+.cursos div, .cursos img{
+    width: 300px;
+}
