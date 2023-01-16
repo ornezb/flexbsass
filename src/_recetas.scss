@@ -1,20 +1,69 @@
-.sectionr{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 10px;
-    gap: 10px;
-    > .list-group-item{
-        border: grey solid 3px;
-        &:hover, &:focus{
-        color:crimson;
-    }
-    }
-    > video{
-        width: 500px;
-        height: 300px;
+section{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 125px;
+        margin: 50px;
+        justify-items: center;
+        @media (max-width: 640px){
+            margin: 2px;
+            gap: 0px;
+            flex-direction: column;
+        }
+        > .div1{
+            border: 5px solid $colordefondo;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 35px;
+            @media (max-width: 640px){
+                text-align: start;
+                margin: 0px;
+                gap: 0px;
+                }
+            > ul{
+                li{
+                    &:hover{
+                        color: palevioletred;
+                }
+                }
+            }      
+        }
+        }
+
+.videor{
+    width: 700px;
+    @media (max-width: 640px){
+        margin-top: 5px;
+        width: 420px;
     }
 }
-
-.cursos div, .cursos img{
-    width: 300px;
+.cursos{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    >.divc{
+        margin: 10px;
+        padding: 5px;
+        border: 5px solid $colordefondo;
+        border-radius: 5px;
+        @media (max-width: 640px){
+            margin-top: 5px;
+            margin: auto;
+            padding: 0;
+        }
+        > img{
+            margin-left: 20px;
+            width: 200px;
+        }
+        > button{
+            border: solid 4px $colorletra;
+            border-radius: 5px;
+            color: black;
+            margin: 10px;
+            &:hover{
+                background-color: palevioletred;
+                color: white;
+                transition: background-color 1s ease-out;
+            }
+        }
+    }
 }

@@ -1,6 +1,6 @@
 footer{
     margin-top: 25px;
-    background-color: lightgrey;
+    background-color: $colordefondo;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -9,13 +9,28 @@ footer{
     padding-top: 5px;
     justify-content: space-between;
     color: $colorletra;
+    @media (max-width: 768px) {
+        width: 768px;
+   }
+    @media (max-width: 640px){
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-area: "visa" "wapp";
+        width: auto;
+        text-align: start;
+        font-size: 15px;
+        flex-direction: column;
+    }
+    > footer h2:nth-child(1){
+        grid-area: visa;
+    }
+    > footer h2:nth-child(2){
+        grid-area: wapp;
+    }
+    > footer h2:nth-child(3){
+        grid-area:instagram;  
+    }
 }
-footer h2:nth-child(1){
-    grid-area: visa;
-}
-footer h2:nth-child(2){
-    grid-area: wapp;
-}
-footer h2:nth-child(3){
-    grid-area:instagram;
-}
+
+
+

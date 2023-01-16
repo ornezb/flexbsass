@@ -1,16 +1,31 @@
-/*contacto*/
-.formcontacto{
-    padding:10px;
-    width:500px;
-    height: 320px;
-    text-align:center;
-    border-radius:5px;
-    border: $colorPrincipal solid 3px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(4,1fr);
-    grid-template-areas: "nombre celu"
-                          "email email"
-                          "asunto asunto"
-                          "boton   boton";
+.forrmcontacto{
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 500px;
+    left:100px;
+    color: $colorletra;
+    border: 3px solid grey;
+    margin: 30px !important;
+    justify-content: space-around;
+    position:relative;
+    @media (max-width: 640px) and (max-width:781px){
+        left:0px;
+        width: 450px;
+        height: 800px;
+    }
+    }
+.forrmcontacto > div{
+      width: 320px !important;
+    }
+
+.btn {
+    width: 200px;
+    bottom: 10px;
+    position: absolute !important;
+    &:hover{
+        background-color: palevioletred;
+        color: white;
+        transition: background-color 1s ease-out;
+    }
 }
